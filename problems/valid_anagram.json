@@ -1,0 +1,5 @@
+{
+  "name": "valid_anagram",
+  "problem": "Write a Python function `is_anagram(s: str, t: str) -> bool` that returns True if t is an anagram of s (same characters, same multiplicity, any order).",
+  "test_code": "assert is_anagram('anagram', 'nagaram') == True\nassert is_anagram('rat', 'car') == False\nassert is_anagram('a', 'ab') == False\nassert is_anagram('', '') == True"
+}

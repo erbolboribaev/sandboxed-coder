@@ -1,0 +1,5 @@
+{
+  "name": "search_rotated_sorted_array",
+  "problem": "Write a Python function `search_rotated(nums: list[int], target: int) -> int` that searches for target in nums, a sorted array that has been rotated at some unknown pivot, and returns its index, or -1 if not found.",
+  "test_code": "assert search_rotated([4, 5, 6, 7, 0, 1, 2], 0) == 4\nassert search_rotated([4, 5, 6, 7, 0, 1, 2], 3) == -1\nassert search_rotated([1], 0) == -1"
+}

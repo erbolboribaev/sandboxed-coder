@@ -1,0 +1,5 @@
+{
+  "name": "climbing_stairs",
+  "problem": "Write a Python function `climbing_stairs(n: int) -> int` that returns the number of distinct ways to climb to the top of a staircase of n steps, taking either 1 or 2 steps at a time.",
+  "test_code": "assert climbing_stairs(2) == 2\nassert climbing_stairs(3) == 3\nassert climbing_stairs(5) == 8"
+}

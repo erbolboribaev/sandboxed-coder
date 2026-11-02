@@ -1,0 +1,5 @@
+{
+  "name": "top_k_frequent",
+  "problem": "Write a Python function `top_k_frequent(nums: list[int], k: int) -> list[int]` that returns the k most frequent elements in nums. The order of elements in the result does not matter.",
+  "test_code": "assert sorted(top_k_frequent([1, 1, 1, 2, 2, 3], 2)) == [1, 2]\nassert sorted(top_k_frequent([1], 1)) == [1]"
+}

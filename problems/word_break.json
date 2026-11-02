@@ -1,0 +1,5 @@
+{
+  "name": "word_break",
+  "problem": "Write a Python function `word_break(s: str, word_dict: list[str]) -> bool` that returns True if s can be segmented into a space-separated sequence of one or more words from word_dict (words may be reused).",
+  "test_code": "assert word_break('leetcode', ['leet', 'code']) == True\nassert word_break('applepenapple', ['apple', 'pen']) == True\nassert word_break('catsandog', ['cats', 'dog', 'sand', 'and', 'cat']) == False"
+}

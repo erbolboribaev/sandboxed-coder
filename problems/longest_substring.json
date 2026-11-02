@@ -1,0 +1,5 @@
+{
+  "name": "longest_substring",
+  "problem": "Write a Python function `length_of_longest_substring(s: str) -> int` that returns the length of the longest substring of `s` without repeating characters. The empty string should return 0.",
+  "test_code": "assert length_of_longest_substring('abcabcbb') == 3\nassert length_of_longest_substring('bbbbb') == 1\nassert length_of_longest_substring('pwwkew') == 3\nassert length_of_longest_substring('') == 0\nassert length_of_longest_substring(' ') == 1\nassert length_of_longest_substring('dvdf') == 3\nassert length_of_longest_substring('abba') == 2\nassert length_of_longest_substring('tmmzuxt') == 5"
+}

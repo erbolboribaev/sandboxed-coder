@@ -1,0 +1,5 @@
+{
+  "name": "merge_intervals",
+  "problem": "Write a Python function `merge_intervals(intervals: list[list[int]]) -> list[list[int]]` that merges all overlapping intervals and returns the merged intervals, sorted by start value.",
+  "test_code": "assert merge_intervals([[1, 3], [2, 6], [8, 10], [15, 18]]) == [[1, 6], [8, 10], [15, 18]]\nassert merge_intervals([[1, 4], [4, 5]]) == [[1, 5]]"
+}

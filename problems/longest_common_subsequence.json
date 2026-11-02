@@ -1,0 +1,5 @@
+{
+  "name": "longest_common_subsequence",
+  "problem": "Write a Python function `longest_common_subsequence(text1: str, text2: str) -> int` that returns the length of the longest common subsequence of text1 and text2 (characters in relative order, not necessarily contiguous).",
+  "test_code": "assert longest_common_subsequence('abcde', 'ace') == 3\nassert longest_common_subsequence('abc', 'abc') == 3\nassert longest_common_subsequence('abc', 'def') == 0"
+}

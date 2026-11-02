@@ -1,0 +1,5 @@
+{
+  "name": "three_sum",
+  "problem": "Write a Python function `three_sum(nums: list[int]) -> list[list[int]]` that returns all unique triplets [a, b, c] from nums such that a + b + c == 0. Each triplet should be sorted in non-decreasing order, and the result must not contain duplicate triplets.",
+  "test_code": "def _norm(result):\n    return sorted(tuple(sorted(t)) for t in result)\n\nassert _norm(three_sum([-1, 0, 1, 2, -1, -4])) == _norm([[-1, -1, 2], [-1, 0, 1]])\nassert _norm(three_sum([0, 1, 1])) == []\nassert _norm(three_sum([0, 0, 0])) == [(0, 0, 0)]\nassert _norm(three_sum([-2, 0, 0, 2, 2])) == [(-2, 0, 2)]\nassert _norm(three_sum([])) == []\nassert _norm(three_sum([0])) == []\nassert _norm(three_sum([1, -1, -1, 0])) == [(-1, 0, 1)]"
+}

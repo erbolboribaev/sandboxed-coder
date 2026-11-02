@@ -1,0 +1,5 @@
+{
+  "name": "regex_match",
+  "problem": "Write a Python function `is_match(s: str, p: str) -> bool` implementing regular expression matching with support for '.' (matches any single character) and '*' (matches zero or more of the preceding element). The match should cover the entire input string (not partial).",
+  "test_code": "assert is_match('aa', 'a') == False\nassert is_match('aa', 'a*') == True\nassert is_match('ab', '.*') == True\nassert is_match('aab', 'c*a*b') == True\nassert is_match('mississippi', 'mis*is*p*.') == False\nassert is_match('', 'a*') == True\nassert is_match('', '.*') == True"
+}

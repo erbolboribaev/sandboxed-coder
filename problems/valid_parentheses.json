@@ -1,0 +1,5 @@
+{
+  "name": "valid_parentheses",
+  "problem": "Write a Python function `is_valid(s: str) -> bool` that returns True if the string, containing only the characters '(', ')', '{', '}', '[' and ']', has valid (correctly matched and nested) bracket pairs.",
+  "test_code": "assert is_valid('()') == True\nassert is_valid('()[]{}') == True\nassert is_valid('(]') == False\nassert is_valid('([)]') == False\nassert is_valid('{[]}') == True\nassert is_valid('') == True\nassert is_valid('(') == False"
+}

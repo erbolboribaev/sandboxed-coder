@@ -1,0 +1,5 @@
+{
+  "name": "longest_valid_parentheses",
+  "problem": "Write a Python function `longest_valid_parens(s: str) -> int` that, given a string containing only '(' and ')', returns the length of the longest valid (well-formed) parentheses substring.",
+  "test_code": "assert longest_valid_parens('(()') == 2\nassert longest_valid_parens(')()())') == 4\nassert longest_valid_parens('') == 0\nassert longest_valid_parens('()(())') == 6\nassert longest_valid_parens('()(()') == 2"
+}

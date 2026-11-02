@@ -1,0 +1,5 @@
+{
+  "name": "group_anagrams",
+  "problem": "Write a Python function `group_anagrams(strs: list[str]) -> list[list[str]]` that groups anagrams together. The order of groups and the order of strings within a group do not matter.",
+  "test_code": "def _norm(res):\n    return sorted(tuple(sorted(g)) for g in res)\n\nassert _norm(group_anagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat'])) == _norm([['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']])\nassert group_anagrams(['']) == [['']]\nassert group_anagrams(['a']) == [['a']]"
+}
