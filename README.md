@@ -102,20 +102,29 @@ python scripts/run_benchmark.py
 ```
 
 ## Project structure
+
+```
 sandboxed-coder/
 ├── src/
-│ ├── llm_client.py # Groq wrapper: prompt -> code, with cost tracking
-│ ├── safety_check.py # AST-based banned import/call check
-│ ├── sandbox.py # Docker execution: isolation + timeout + resilience
-│ ├── agent.py # the iteration loop + guardrails
-│ └── cli.py # solve one problem from the command line
+│   ├── llm_client.py        # Groq wrapper: prompt -> code, with cost tracking
+│   ├── safety_check.py      # AST-based banned import/call check
+│   ├── sandbox.py           # Docker execution: isolation + timeout + resilience
+│   ├── agent.py             # the iteration loop + guardrails
+│   └── cli.py               # solve one problem from the command line
 ├── scripts/
-│ ├── docker_smoke_test.py # verify sandboxing works, no API calls
-│ ├── generate_problems.py # writes the benchmark problem set
-│ └── run_benchmark.py # runs the agent over every problem, reports results
-├── problems/ # 20 benchmark problems (JSON: name, problem, test_code)
-├── tests/ # pytest suite (LLM + sandbox mocked)
-└── .github/workflows/ci.yml
+│   ├── docker_smoke_test.py # verify sandboxing works, no API calls
+│   ├── generate_problems.py # writes the benchmark problem set
+│   └── run_benchmark.py     # runs the agent over every problem, reports results
+├── problems/                # 20 benchmark problems (JSON: name, problem, test_code)
+├── tests/                   # pytest suite (LLM + sandbox mocked)
+├── .github/workflows/ci.yml # GitHub Actions: runs pytest
+├── .env.example             # template for GROQ_API_KEY
+├── .gitignore
+├── requirements.txt
+└── README.md
+```
+
+`logs/` is created at runtime (agent JSONL logs and `benchmark_results.json`) and is not committed.
 
 ## Technical decisions
 
